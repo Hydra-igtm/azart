@@ -37,7 +37,7 @@ sleep 10
 masternodekey=$(./azart-cli masternode genkey)
 ./azart-cli stop
 sleep 3
-echo -e "\nserver=1\nlisten=1\ndaemon=1\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey\nrpcuser=RPCUSER\nrpcpassword=RPCPASSWORD\nrpcport=9798\nrpcallowip=127.0.0.1\naddnode=176.9.70.106\naddnode=5.9.73.81\naddnode=5.9.6.17\naddnode=176.9.121.219\naddnode=5.188.204.38\naddnode=5.188.204.37\naddnode=5.188.204.36\naddnode=5.188.204.35\naddnode=5.188.204.34\naddnode=5.188.204.33\naddnode=5.188.204.32\naddnode=5.188.204.31\naddnode=5.188.204.30\naddnode=5.188.204.29\naddnode=5.188.204.28\naddnode=5.188.204.27\naddnode=5.188.204.6\n" >> "/root/.azartcore/azart.conf"
+echo -e "\nserver=1\nlisten=1\ndaemon=1\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey\nrpcuser=RPCUSER\nrpcpassword=RPCPASSWORD\nrpcport=9798\nrpcallowip=127.0.0.1\naddnode=176.9.70.106:9799\naddnode=5.9.73.81:9799\naddnode=5.9.6.17:9799\naddnode=176.9.121.219:9799\naddnode=5.188.204.38:9799\naddnode=5.188.204.37:9799\naddnode=5.188.204.36:9799\naddnode=5.188.204.35:9799\naddnode=5.188.204.34:9799\naddnode=5.188.204.33:9799\naddnode=5.188.204.32:9799\naddnode=5.188.204.31:9799\naddnode=5.188.204.30:9799\naddnode=5.188.204.29:9799\naddnode=5.188.204.28:9799\naddnode=5.188.204.27:9799\naddnode=5.188.204.6:9799\n" >> "/root/.azartcore/azart.conf"
 sleep 3
 sudo sed -i -e "s/exit 0/sudo \-u root \/opt\/azart-core\/azartd \> \/dev\/null \&\nexit 0/g" /etc/rc.local
 ./azartd -daemon
