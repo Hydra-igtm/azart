@@ -21,6 +21,8 @@ tar -xvf azart-0.12.4.1-linux-x64.tgz
 rm azart-0.12.4.1-linux-x64.tgz
 mv azart-0.12.4.1-linux-x64/azartd ./azartd
 mv azart-0.12.4.1-linux-x64/azart-cli ./azart-cli
+mv azart-0.12.4.1-linux-x64/azart-tx ./azart-tx
+mv azart-0.12.4.1-linux-x64/azart-qt ./azart-qt
 rm -rf azart-0.12.4.1-linux-x64
 chmod -R 755 /opt/azart-core
 cd /opt
@@ -35,7 +37,7 @@ sleep 10
 masternodekey=$(./azart-cli masternode genkey)
 ./azart-cli stop
 sleep 3
-echo -e "\ndaemon=1\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey" >> "/root/.azartcore/azart.conf"
+echo -e "\nserver=1\nlisten=1\ndaemon=1\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey\nrpcuser=RPCUSER\nrpcpassword=RPCPASSWORD\nrpcport=9798\nrpcallowip=127.0.0.1\naddnode=176.9.70.106\naddnode=5.9.73.81\naddnode=5.9.6.17\naddnode=176.9.121.219\naddnode=5.188.204.38\naddnode=5.188.204.37\naddnode=5.188.204.36\naddnode=5.188.204.35\naddnode=5.188.204.34\naddnode=5.188.204.33\naddnode=5.188.204.32\naddnode=5.188.204.31\naddnode=5.188.204.30\naddnode=5.188.204.29\naddnode=5.188.204.28\naddnode=5.188.204.27\naddnode=5.188.204.6\n" >> "/root/.azartcore/azart.conf"
 sleep 3
 sudo sed -i -e "s/exit 0/sudo \-u root \/opt\/azart-core\/azartd \> \/dev\/null \&\nexit 0/g" /etc/rc.local
 ./azartd -daemon
