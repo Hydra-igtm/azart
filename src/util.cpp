@@ -631,7 +631,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
         // Create empty azart.conf if it does not excist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL) {
-            fputs("addnode=5.9.6.17:9799\naddnode=5.9.73.81:9799\naddnode=176.9.121.219:9799\naddnode=176.9.70.106:9799\naddnode=80.87.197.195:9799\naddnode=200.7.111.100:9799\n", configFile);
+            fputs("addnode=176.9.70.106\naddnode=5.9.73.81\naddnode=5.9.6.17\naddnode=176.9.121.219\naddnode=5.188.204.38\naddnode=5.188.204.37\naddnode=5.188.204.36\naddnode=5.188.204.35\naddnode=5.188.204.34\naddnode=5.188.204.33\naddnode=5.188.204.32\naddnode=5.188.204.31\naddnode=5.188.204.30\naddnode=5.188.204.29\naddnode=5.188.204.28\naddnode=5.188.204.27\naddnode=5.188.204.6\n", configFile);
             fclose(configFile);
 	}
     }
