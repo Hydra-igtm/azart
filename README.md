@@ -17,6 +17,25 @@ Azart Core staging tree 0.12.4.1
 ###### Exchanges:  
 - Crex24.com: https://crex24.com/exchange/AZART-BTC  
 
+###### Nodes:  
+- addnode=176.9.70.106:9799
+- addnode=5.9.73.81:9799
+- addnode=5.9.6.17:9799
+- addnode=176.9.121.219:9799
+- addnode=5.188.204.38:9799
+- addnode=5.188.204.37:9799
+- addnode=5.188.204.36:9799
+- addnode=5.188.204.35:9799
+- addnode=5.188.204.34:9799
+- addnode=5.188.204.33:9799
+- addnode=5.188.204.32:9799
+- addnode=5.188.204.31:9799
+- addnode=5.188.204.30:9799
+- addnode=5.188.204.29:9799
+- addnode=5.188.204.28:9799
+- addnode=5.188.204.27:9799
+- addnode=5.188.204.6:9799
+
 License
 -------
 
