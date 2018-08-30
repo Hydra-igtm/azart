@@ -1,4 +1,4 @@
-Azart Core staging tree 0.12.4.1
+Azart Core staging tree 0.12.4.2
 ===============================
 
 
