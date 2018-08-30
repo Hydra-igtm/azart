@@ -8,7 +8,7 @@ Azart Core staging tree 0.12.4.1
 ###### Resources:
 - Official site: https://azartpay.com  
 - Block explorer: https://explorer.azartpay.com  
-- White paper: [whitepaper.pdf](https://github.com/azartpay/azart/blob/master/azart-docs/whitepaper.pdf)  
+- White paper: [whitepaper_v2.pdf](https://github.com/azartpay/azart/blob/master/azart-docs/whitepaper_v2.pdf)  
 - Sentinel: https://github.com/azartpay/azart-sentinel  
 - Masternode installer: https://github.com/azartpay/azart-masternode  
 - Masternode guide: https://github.com/azartpay/azart-masternode-guide  
