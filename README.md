@@ -15,6 +15,7 @@ Azart Core staging tree 0.12.4.1
 - How to setup a Masternode: https://github.com/azartpay/azart/blob/master/MASTERNODE.md
 
 ###### Exchanges:  
+- Stocks.exchange: https://app.stocks.exchange/en/basic-trade/pair/BTC/AZART/1D
 - Crex24.com: https://crex24.com/exchange/AZART-BTC  
 
 ###### Nodes:  
