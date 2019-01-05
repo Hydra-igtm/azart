@@ -1,4 +1,4 @@
-Azart Core staging tree 0.12.4.2
+Azart Core staging tree 0.12.4.3
 ===============================
 
 
@@ -17,25 +17,43 @@ Azart Core staging tree 0.12.4.2
 ###### Exchanges:  
 - Stocks.exchange: https://app.stocks.exchange/en/basic-trade/pair/BTC/AZART/1D
 - Crex24.com: https://crex24.com/exchange/AZART-BTC  
+- Dexas: https://dex.as/market/DEXAS.AZART_DEXAS.BTC
 
 ###### Nodes:  
-- addnode=176.9.70.106:9799
-- addnode=5.9.73.81:9799
 - addnode=5.9.6.17:9799
-- addnode=176.9.121.219:9799
-- addnode=5.188.204.38:9799
-- addnode=5.188.204.37:9799
-- addnode=5.188.204.36:9799
-- addnode=5.188.204.35:9799
-- addnode=5.188.204.34:9799
-- addnode=5.188.204.33:9799
-- addnode=5.188.204.32:9799
-- addnode=5.188.204.31:9799
-- addnode=5.188.204.30:9799
-- addnode=5.188.204.29:9799
-- addnode=5.188.204.28:9799
-- addnode=5.188.204.27:9799
-- addnode=5.188.204.6:9799
+- addnode=5.188.63.139:9799
+- addnode=5.188.63.138:9799
+- addnode=5.188.63.137:9799
+- addnode=5.188.63.136:9799
+- addnode=5.188.63.135:9799
+- addnode=5.188.63.131:9799
+- addnode=5.188.63.130:9799
+- addnode=5.188.63.129:9799
+- addnode=5.188.63.128:9799
+- addnode=5.188.63.113:9799
+- addnode=5.188.63.104:9799
+- addnode=5.188.63.96:9799
+- addnode=37.9.52.67:9799
+- addnode=37.9.52.66:9799
+- addnode=37.9.52.65:9799
+- addnode=37.9.52.64:9799
+- addnode=37.9.52.63:9799
+- addnode=37.9.52.62:9799
+- addnode=37.9.52.60:9799
+- addnode=37.9.52.59:9799
+- addnode=37.9.52.56:9799
+- addnode=37.9.52.55:9799
+- addnode=37.9.52.54:9799
+- addnode=37.9.52.52:9799
+- addnode=37.9.52.51:9799
+- addnode=37.9.52.50:9799
+- addnode=37.9.52.49:9799
+- addnode=37.9.52.48:9799
+- addnode=37.9.52.47:9799
+- addnode=37.9.52.46:9799
+- addnode=37.9.52.18:9799
+- addnode=5.188.205.240:9799
+- addnode=5.188.205.239:9799
 
 License
 -------
