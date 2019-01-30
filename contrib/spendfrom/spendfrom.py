@@ -35,10 +35,10 @@ def check_json_precision():
 def determine_db_dir():
     """Return the default location of the Azart Core data directory"""
     if platform.system() == "Darwin":
-        return os.path.expanduser("~/Library/Application Support/AzartCore/")
+        return os.path.expanduser("~/Library/Application Support/AzartPay/")
     elif platform.system() == "Windows":
-        return os.path.join(os.environ['APPDATA'], "AzartCore")
-    return os.path.expanduser("~/.azartcore")
+        return os.path.join(os.environ['APPDATA'], "AzartPay")
+    return os.path.expanduser("~/.azartpay")
 
 def read_bitcoin_config(dbdir):
     """Read the azart.conf file from dbdir, returns dictionary of settings"""

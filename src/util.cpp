@@ -516,13 +516,13 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\AzartCore
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\AzartCore
-    // Mac: ~/Library/Application Support/AzartCore
-    // Unix: ~/.azartcore
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\AzartPay
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\AzartPay
+    // Mac: ~/Library/Application Support/AzartPay
+    // Unix: ~/.azartpay
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "AzartCore";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "AzartPay";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -532,10 +532,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/AzartCore";
+    return pathRet / "Library/Application Support/AzartPay";
 #else
     // Unix
-    return pathRet / ".azartcore";
+    return pathRet / ".azartpay";
 #endif
 #endif
 }
@@ -631,7 +631,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
         // Create empty azart.conf if it does not excist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL) {
-            fputs("\naddnode=5.9.6.17:9799\naddnode=5.188.63.139:9799\naddnode=5.188.63.138:9799\naddnode=5.188.63.137:9799\naddnode=5.188.63.136:9799\naddnode=5.188.63.135:9799\naddnode=5.188.63.131:9799\naddnode=5.188.63.130:9799\naddnode=5.188.63.129:9799\naddnode=5.188.63.128:9799\naddnode=5.188.63.113:9799\naddnode=5.188.63.104:9799\naddnode=5.188.63.96:9799\naddnode=37.9.52.67:9799\naddnode=37.9.52.66:9799\naddnode=37.9.52.65:9799\naddnode=37.9.52.64:9799\naddnode=37.9.52.63:9799\naddnode=37.9.52.62:9799\naddnode=37.9.52.60:9799\naddnode=37.9.52.59:9799\naddnode=37.9.52.56:9799\naddnode=37.9.52.55:9799\naddnode=37.9.52.54:9799\naddnode=37.9.52.52:9799\naddnode=37.9.52.51:9799\naddnode=37.9.52.50:9799\naddnode=37.9.52.49:9799\naddnode=37.9.52.48:9799\naddnode=37.9.52.47:9799\naddnode=37.9.52.46:9799\naddnode=37.9.52.18:9799\naddnode=5.188.205.240:9799\naddnode=5.188.205.239:9799\n", configFile);
+            fputs("\naddnode=5.9.6.17:9779\naddnode=193.47.33.25:9779\naddnode=193.47.33.24:9779\naddnode=193.47.33.23:9779\naddnode=193.47.33.22:9779\naddnode=193.47.33.21:9779\naddnode=193.47.33.20:9779\naddnode=193.47.33.19:9779\naddnode=193.47.33.18:9779\naddnode=193.47.33.17:9779\naddnode=193.47.33.16:9779\naddnode=193.47.33.15:9779\naddnode=193.47.33.14:9779\naddnode=193.47.33.13:9779\naddnode=193.47.33.12:9779\naddnode=193.47.33.11:9779\naddnode=193.47.33.10:9779\naddnode=193.47.33.9:9779\naddnode=193.47.33.8:9779\naddnode=193.47.33.7:9779\naddnode=5.188.205.240:9779\naddnode=5.188.205.239:9779\n", configFile);
             fclose(configFile);
 	}
     }

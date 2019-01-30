@@ -1,13 +1,12 @@
-Azart Core staging tree 0.12.4.3
+Azart Core staging tree 0.13.0.1 (algorithm: x17)
 ===============================
-
 
 
 ## Development Resources
 
 ###### Resources:
 - Official site: https://azartpay.com  
-- Block explorer: https://explorer.azartpay.com  
+- Block explorer: https://chain.azartpay.com  
 - White paper: [whitepaper_v2.pdf](https://github.com/azartpay/azart/blob/master/azart-docs/whitepaper_v2.pdf)  
 - Sentinel: https://github.com/azartpay/azart-sentinel  
 - Masternode installer: https://github.com/azartpay/azart-masternode  
@@ -15,45 +14,34 @@ Azart Core staging tree 0.12.4.3
 - How to setup a Masternode: https://github.com/azartpay/azart/blob/master/MASTERNODE.md
 
 ###### Exchanges:  
+- Crypto-Bridge.org: https://wallet.crypto-bridge.org/market/BRIDGE.AZART_BRIDGE.BTC
 - Stocks.exchange: https://app.stocks.exchange/en/basic-trade/pair/BTC/AZART/1D
 - Crex24.com: https://crex24.com/exchange/AZART-BTC  
-- Dexas: https://dex.as/market/DEXAS.AZART_DEXAS.BTC
+- Dexas.io: https://dex.as/market/DEXAS.AZART_DEXAS.BTC
 
 ###### Nodes:  
-- addnode=5.9.6.17:9799
-- addnode=5.188.63.139:9799
-- addnode=5.188.63.138:9799
-- addnode=5.188.63.137:9799
-- addnode=5.188.63.136:9799
-- addnode=5.188.63.135:9799
-- addnode=5.188.63.131:9799
-- addnode=5.188.63.130:9799
-- addnode=5.188.63.129:9799
-- addnode=5.188.63.128:9799
-- addnode=5.188.63.113:9799
-- addnode=5.188.63.104:9799
-- addnode=5.188.63.96:9799
-- addnode=37.9.52.67:9799
-- addnode=37.9.52.66:9799
-- addnode=37.9.52.65:9799
-- addnode=37.9.52.64:9799
-- addnode=37.9.52.63:9799
-- addnode=37.9.52.62:9799
-- addnode=37.9.52.60:9799
-- addnode=37.9.52.59:9799
-- addnode=37.9.52.56:9799
-- addnode=37.9.52.55:9799
-- addnode=37.9.52.54:9799
-- addnode=37.9.52.52:9799
-- addnode=37.9.52.51:9799
-- addnode=37.9.52.50:9799
-- addnode=37.9.52.49:9799
-- addnode=37.9.52.48:9799
-- addnode=37.9.52.47:9799
-- addnode=37.9.52.46:9799
-- addnode=37.9.52.18:9799
-- addnode=5.188.205.240:9799
-- addnode=5.188.205.239:9799
+- addnode=5.9.6.17:9779
+- addnode=193.47.33.25:9779
+- addnode=193.47.33.24:9779
+- addnode=193.47.33.23:9779
+- addnode=193.47.33.22:9779
+- addnode=193.47.33.21:9779
+- addnode=193.47.33.20:9779
+- addnode=193.47.33.19:9779
+- addnode=193.47.33.18:9779
+- addnode=193.47.33.17:9779
+- addnode=193.47.33.16:9779
+- addnode=193.47.33.15:9779
+- addnode=193.47.33.14:9779
+- addnode=193.47.33.13:9779
+- addnode=193.47.33.12:9779
+- addnode=193.47.33.11:9779
+- addnode=193.47.33.10:9779
+- addnode=193.47.33.9:9779
+- addnode=193.47.33.8:9779
+- addnode=193.47.33.7:9779
+- addnode=5.188.205.240:9779
+- addnode=5.188.205.239:9779
 
 License
 -------

@@ -1,7 +1,7 @@
 # /etc/conf.d/azartd: config file for /etc/init.d/azartd
 
 # Config file location
-#BITCOIND_CONFIGFILE="/etc/azartcore/azart.conf"
+#BITCOIND_CONFIGFILE="/etc/azartpay/azart.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
 #BITCOIND_PIDDIR="/var/run/azartd"
@@ -13,8 +13,8 @@
 #BITCOIND_DATADIR="/var/lib/azartd"
 
 # User and group to own azartd process
-#BITCOIND_USER="azartcore"
-#BITCOIND_GROUP="azartcore"
+#BITCOIND_USER="azartpay"
+#BITCOIND_GROUP="azartpay"
 
 # Path to azartd executable
 #BITCOIND_BIN="/usr/bin/azartd"

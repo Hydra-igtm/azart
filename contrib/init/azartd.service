@@ -3,13 +3,13 @@ Description=Azart's distributed currency daemon
 After=network.target
 
 [Service]
-User=azartcore
-Group=azartcore
+User=azartpay
+Group=azartpay
 
 Type=forking
 PIDFile=/var/lib/azartd/azartd.pid
 ExecStart=/usr/bin/azartd -daemon -pid=/var/lib/azartd/azartd.pid \
--conf=/etc/azartcore/azart.conf -datadir=/var/lib/azartd -disablewallet
+-conf=/etc/azartpay/azart.conf -datadir=/var/lib/azartd -disablewallet
 
 Restart=always
 PrivateTmp=true

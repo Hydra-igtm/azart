@@ -16,14 +16,14 @@ sudo apt-get install mc htop git python-virtualenv ntpdate -y
 sudo ntpdate -u pool.ntp.org
 sudo mkdir /opt/azart-core
 cd /opt/azart-core
-wget https://github.com/azartpay/azart/releases/download/0.12.4.3/azart-0.12.4.3-linux-x64.tgz
-tar -xvf azart-0.12.4.3-linux-x64.tgz
-rm azart-0.12.4.3-linux-x64.tgz
-mv azart-0.12.4.3-linux-x64/azartd ./azartd
-mv azart-0.12.4.3-linux-x64/azart-cli ./azart-cli
-mv azart-0.12.4.3-linux-x64/azart-tx ./azart-tx
-mv azart-0.12.4.3-linux-x64/azart-qt ./azart-qt
-rm -rf azart-0.12.4.3-linux-x64
+wget https://github.com/azartpay/azart/releases/download/0.13.0.1/azart-0.13.0.1-linux.tgz
+tar -xvf azart-0.13.0.1-linux.tgz
+rm azart-0.13.0.1-linux.tgz
+mv azart-0.13.0.1-linux/azartd ./azartd
+mv azart-0.13.0.1-linux/azart-cli ./azart-cli
+mv azart-0.13.0.1-linux/azart-tx ./azart-tx
+mv azart-0.13.0.1-linux/azart-qt ./azart-qt
+rm -rf azart-0.13.0.1-linux
 chmod -R 755 /opt/azart-core
 cd /opt
 git clone https://github.com/azartpay/azart-sentinel azart-sentinel
@@ -37,7 +37,7 @@ sleep 10
 masternodekey=$(./azart-cli masternode genkey)
 ./azart-cli stop
 sleep 3
-echo -e "\nserver=1\nlisten=1\ndaemon=1\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey\nrpcuser=RPCUSER\nrpcpassword=RPCPASSWORD\nrpcport=9798\nrpcallowip=127.0.0.1\naddnode=5.9.6.17:9799\naddnode=5.188.63.139:9799\naddnode=5.188.63.138:9799\naddnode=5.188.63.137:9799\naddnode=5.188.63.136:9799\naddnode=5.188.63.135:9799\naddnode=5.188.63.131:9799\naddnode=5.188.63.130:9799\naddnode=5.188.63.129:9799\naddnode=5.188.63.128:9799\naddnode=5.188.63.113:9799\naddnode=5.188.63.104:9799\naddnode=5.188.63.96:9799\naddnode=37.9.52.67:9799\naddnode=37.9.52.66:9799\naddnode=37.9.52.65:9799\naddnode=37.9.52.64:9799\naddnode=37.9.52.63:9799\naddnode=37.9.52.62:9799\naddnode=37.9.52.60:9799\naddnode=37.9.52.59:9799\naddnode=37.9.52.56:9799\naddnode=37.9.52.55:9799\naddnode=37.9.52.54:9799\naddnode=37.9.52.52:9799\naddnode=37.9.52.51:9799\naddnode=37.9.52.50:9799\naddnode=37.9.52.49:9799\naddnode=37.9.52.48:9799\naddnode=37.9.52.47:9799\naddnode=37.9.52.46:9799\naddnode=37.9.52.18:9799\naddnode=5.188.205.240:9799\naddnode=5.188.205.239:9799\n" >> "/root/.azartcore/azart.conf"
+echo -e "\nserver=1\nlisten=1\ndaemon=1\nmaxconnections=256\nmasternode=1\nmasternodeprivkey=$masternodekey\nrpcuser=RPCUSER\nrpcpassword=RPCPASSWORD\nrpcport=9798\nrpcallowip=127.0.0.1\naddnode=5.9.6.17:9779\naddnode=193.47.33.25:9779\naddnode=193.47.33.24:9779\naddnode=193.47.33.23:9779\naddnode=193.47.33.22:9779\naddnode=193.47.33.21:9779\naddnode=193.47.33.20:9779\naddnode=193.47.33.19:9779\naddnode=193.47.33.18:9779\naddnode=193.47.33.17:9779\naddnode=193.47.33.16:9779\naddnode=193.47.33.15:9779\naddnode=193.47.33.14:9779\naddnode=193.47.33.13:9779\naddnode=193.47.33.12:9779\naddnode=193.47.33.11:9779\naddnode=193.47.33.10:9779\naddnode=193.47.33.9:9779\naddnode=193.47.33.8:9779\naddnode=193.47.33.7:9779\naddnode=5.188.205.240:9779\naddnode=5.188.205.239:9779\n" >> "/root/.azartpay/azart.conf"
 sleep 3
 sudo sed -i -e "s/exit 0/sudo \-u root \/opt\/azart-core\/azartd \> \/dev\/null \&\nexit 0/g" /etc/rc.local
 ./azartd -daemon

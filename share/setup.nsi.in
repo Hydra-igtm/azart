@@ -48,11 +48,11 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile @abs_top_srcdir@/azartcore-${VERSION}-win@WINDOWS_BITS@-setup.exe
+OutFile @abs_top_srcdir@/azartpay-${VERSION}-win@WINDOWS_BITS@-setup.exe
 !if "@WINDOWS_BITS@" == "64"
-InstallDir $PROGRAMFILES64\AzartCore
+InstallDir $PROGRAMFILES64\AzartPay
 !else
-InstallDir $PROGRAMFILES\AzartCore
+InstallDir $PROGRAMFILES\AzartPay
 !endif
 CRCCheck on
 XPStyle on

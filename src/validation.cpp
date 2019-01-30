@@ -1235,39 +1235,10 @@ CAmount GetBlockSubsidy(int nPrevBits, int nPrevHeight, const Consensus::Params&
        CAmount nSubsidyBase = 0;
        dDiff = ConvertBitsToDouble(nPrevBits);
       
-       if(nPrevHeight < 100) {nSubsidyBase = 3750;}  // premine 1,5% 375000
-       if((nPrevHeight >= 100) & (nPrevHeight <= 3000)) {nSubsidyBase = 2;}
-       if(nPrevHeight == 3332) {nSubsidyBase = 1000;}
-       if(nPrevHeight == 5554) {nSubsidyBase = 1000;}
-       if(nPrevHeight == 7776) {nSubsidyBase = 1000;}
-       if(nPrevHeight == 9998) {nSubsidyBase = 1000;}
-       if(nPrevHeight == 12221) {nSubsidyBase = 2500;}
-       if(nPrevHeight == 14443) {nSubsidyBase = 2500;}
-       if(nPrevHeight == 16665) {nSubsidyBase = 2500;}
-       if(nPrevHeight == 18887) {nSubsidyBase = 2500;}
-       if(nPrevHeight == 21600) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 43200) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 64800) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 86400) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 108000) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 129600) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 151200) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 172800) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 194400) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 216000) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 237600) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 259200) {nSubsidyBase = 5000;}
-       if(nPrevHeight == 395280) {nSubsidyBase = 10000;}
-       if(nPrevHeight == 527040) {nSubsidyBase = 10000;}
-       if(nPrevHeight == 658800) {nSubsidyBase = 10000;}
-       if(nPrevHeight == 790560) {nSubsidyBase = 10000;}
-       if(nPrevHeight == 922320) {nSubsidyBase = 10000;}
-       if(nPrevHeight == 1054080) {nSubsidyBase = 10000;}
-       if(nPrevHeight == 1185840) {nSubsidyBase = 10000;}
-       if(nPrevHeight == 1317600) {nSubsidyBase = 10000;}
+       if(nPrevHeight < 10) {nSubsidyBase = 400000;} // old emission
         
 	if(nSubsidyBase == 0) {
-	    nSubsidy = (21.000009 - (0.000009 * nPrevHeight)) * COIN;
+	    nSubsidy = (19.500009 - (0.000009 * nPrevHeight)) * COIN;
 	} else {
 	    nSubsidy = nSubsidyBase * COIN;
 	}

@@ -13,7 +13,7 @@ can be found in the contrib/init folder.
 1. Service User
 ---------------------------------
 
-All three Linux startup configurations assume the existence of a "azartcore" user
+All three Linux startup configurations assume the existence of a "azartpay" user
 and group.  They must be created before attempting to use these scripts.
 The OS X configuration assumes azartd will be set up for the current user.
 
@@ -54,23 +54,23 @@ see `contrib/debian/examples/azart.conf`.
 All three configurations assume several paths that might need to be adjusted.
 
 Binary:              `/usr/bin/azartd`  
-Configuration file:  `/etc/azartcore/azart.conf`  
+Configuration file:  `/etc/azartpay/azart.conf`  
 Data directory:      `/var/lib/azartd`  
 PID file:            `/var/run/azartd/azartd.pid` (OpenRC and Upstart) or `/var/lib/azartd/azartd.pid` (systemd)  
 Lock file:           `/var/lock/subsys/azartd` (CentOS)  
 
 The configuration file, PID directory (if applicable) and data directory
-should all be owned by the azartcore user and group.  It is advised for security
+should all be owned by the azartpay user and group.  It is advised for security
 reasons to make the configuration file and data directory only readable by the
-azartcore user and group.  Access to azart-cli and other azartd rpc clients
+azartpay user and group.  Access to azart-cli and other azartd rpc clients
 can then be controlled by group membership.
 
 3b) Mac OS X
 
 Binary:              `/usr/local/bin/azartd`  
-Configuration file:  `~/Library/Application Support/AzartCore/azart.conf`  
-Data directory:      `~/Library/Application Support/AzartCore`
-Lock file:           `~/Library/Application Support/AzartCore/.lock`
+Configuration file:  `~/Library/Application Support/AzartPay/azart.conf`  
+Data directory:      `~/Library/Application Support/AzartPay`
+Lock file:           `~/Library/Application Support/AzartPay/.lock`
 
 4. Installing Service Configuration
 -----------------------------------
@@ -116,7 +116,7 @@ This Launch Agent will cause azartd to start whenever the user logs in.
 
 NOTE: This approach is intended for those wanting to run azartd as the current user.
 You will need to modify org.azart.azartd.plist if you intend to use it as a
-Launch Daemon with a dedicated azartcore user.
+Launch Daemon with a dedicated azartpay user.
 
 5. Auto-respawn
 -----------------------------------

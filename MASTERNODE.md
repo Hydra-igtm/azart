@@ -59,7 +59,7 @@ Then execute the command below:
 - Fill in a new line with the template as below:
 
 ```bash
-Masternode-Alias[space]VPS-IP-address:9799[space]private-key-from-vps[space]transaction-id[space]output-index
+Masternode-Alias[space]VPS-IP-address:9779[space]private-key-from-vps[space]transaction-id[space]output-index
 ```
 
 - Save & close

@@ -51,17 +51,17 @@ If you configure your Tor system accordingly, it is possible to make your node a
 reachable from the Tor network. Add these lines to your /etc/tor/torrc (or equivalent
 config file):
 
-	HiddenServiceDir /var/lib/tor/azartcore-service/
-	HiddenServicePort 9799 127.0.0.1:9799
-	HiddenServicePort 19799 127.0.0.1:19799
+	HiddenServiceDir /var/lib/tor/azartpay-service/
+	HiddenServicePort 9779 127.0.0.1:9779
+	HiddenServicePort 19779 127.0.0.1:19779
 
 The directory can be different of course, but (both) port numbers should be equal to
-your azartd's P2P listen port (9799 by default).
+your azartd's P2P listen port (9779 by default).
 
 	-externalip=X   You can tell Azart Core about its publicly reachable address using
 	                this option, and this can be a .onion address. Given the above
 	                configuration, you can find your onion address in
-	                /var/lib/tor/azartcore-service/hostname. Onion addresses are given
+	                /var/lib/tor/azartpay-service/hostname. Onion addresses are given
 	                preference for your node to advertise itself with, for connections
 	                coming from unroutable addresses (such as 127.0.0.1, where the
 	                Tor proxy typically runs).
@@ -91,7 +91,7 @@ as well, use `discover` instead:
 
 	./azartd ... -discover
 
-and open port 9799 on your firewall (or use -upnp).
+and open port 9779 on your firewall (or use -upnp).
 
 If you only want to use Tor to reach onion addresses, but not use it as a proxy
 for normal IPv4/IPv6 communication, use:
