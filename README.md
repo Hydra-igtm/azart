@@ -14,9 +14,9 @@ Azart Core staging tree 0.13.0.1 (algorithm: x17)
 - How to setup a Masternode: https://github.com/azartpay/azart/blob/master/MASTERNODE.md
 
 ###### Exchanges:  
-- Crypto-Bridge.org: https://wallet.crypto-bridge.org/market/BRIDGE.AZART_BRIDGE.BTC
-- Stocks.exchange: https://app.stocks.exchange/en/basic-trade/pair/BTC/AZART/1D
-- Crex24.com: https://crex24.com/exchange/AZART-BTC  
+- Stex.com: https://app.stex.com/en/basic-trade/pair/BTC/AZART/1D
+- Graviex.net: https://graviex.net/markets/azartbtc
+- Escodex.com: https://wallet.escodex.com/market/ESCODEX.AZART_ESCODEX.BTC
 - Dexas.io: https://dex.as/market/DEXAS.AZART_DEXAS.BTC
 
 ###### Nodes:  
