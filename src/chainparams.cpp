@@ -118,10 +118,10 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_DIP0001].nThreshold = 3226;
 
        // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000000003bbfa2148eabe9");
+        consensus.nMinimumChainWork = uint256S("0x00000000000000000000000000000000000000000000000000666042a331728e");
 
         // By default assume that the signatures in ancestors of this block are valid.
-        consensus.defaultAssumeValid = uint256S("0x00000000010c571bc2bed7cced6a7e4970fdf604e7056aa2c41fe8d79fc80335");
+        consensus.defaultAssumeValid = uint256S("0x000000007d3edfbf6e6e40e318d2b49c0215962f812005318788a061de433c61");
 
         /**
          * The message start string is designed to be unlikely to occur in normal data.
@@ -144,7 +144,7 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x000002c5ce092ee8ff4fb0b53f5364803f75750f73d1e185520d4f928602b1aa"));
         assert(genesis.hashMerkleRoot == uint256S("0xd6d451c674e42b2813ea67d93a1b39c296c095d11d0a71f770b30d9404dd1368"));
 	    
-        vSeeds.push_back(CDNSSeedData("5.9.6.17", "5.9.6.17"));
+        vSeeds.push_back(CDNSSeedData("95.216.15.156", "95.216.15.156"));
         //vSeeds.clear();
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,82);
@@ -160,7 +160,7 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = true;
         fMineBlocksOnDemand = false;
@@ -175,9 +175,10 @@ public:
             ( 0, uint256S("0x000002c5ce092ee8ff4fb0b53f5364803f75750f73d1e185520d4f928602b1aa"))
             ( 153, uint256S("0x0000014951f27538d757c72d2505cd19959b40025f5b60b6253ecbbea6260f7a"))
             ( 2377, uint256S("0x00000000006169e584d0f3179ad6d6ee2af674b585dbe02fa8f88396a6626e75"))
-            ( 37629, uint256S("0x00000000010c571bc2bed7cced6a7e4970fdf604e7056aa2c41fe8d79fc80335")),
-            1554791216, // * UNIX timestamp of last checkpoint block
-            23721,    // * total number of transactions between genesis and last checkpoint
+            ( 37629, uint256S("0x00000000010c571bc2bed7cced6a7e4970fdf604e7056aa2c41fe8d79fc80335"))
+            ( 101973, uint256S("0x000000007d3edfbf6e6e40e318d2b49c0215962f812005318788a061de433c61")),
+            1566386821, // * UNIX timestamp of last checkpoint block
+            112706,    // * total number of transactions between genesis and last checkpoint
                         //   (the tx=... number in the SetBestChain debug.log lines)
             5000        // * estimated number of transactions per day after checkpoint
         };
