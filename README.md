@@ -1,4 +1,4 @@
-Azart Core staging tree 0.13.0.1 (algorithm: x17)
+Azart Core staging tree 0.13.0.2 (algorithm: x17)
 ===============================
 
 
