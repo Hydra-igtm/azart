@@ -22,7 +22,7 @@ Azart Core staging tree 0.13.0.2 (algorithm: x17)
 ###### Nodes:  
 - addnode=95.216.15.156:9779
 - addnode=5.9.6.17:9779
-- addnode=193.47.33.25:9779
+- addnode=193.47.33.153:9779
 
 License
 -------
