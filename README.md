@@ -1,4 +1,4 @@
-Azart Core staging tree 0.13.0.2 (algorithm: x17)
+Azart Core staging tree 0.13.0.1 (algorithm: x17)
 ===============================
 
 
@@ -20,7 +20,29 @@ Azart Core staging tree 0.13.0.2 (algorithm: x17)
 - Dexas.io: https://dex.as/market/DEXAS.AZART_DEXAS.BTC
 
 ###### Nodes:  
-- addnode=138.201.196.174:9779
+- addnode=95.216.15.156:9779
+- addnode=5.9.6.17:9779
+- addnode=193.47.33.25:9779
+- addnode=193.47.33.24:9779
+- addnode=193.47.33.23:9779
+- addnode=193.47.33.22:9779
+- addnode=193.47.33.21:9779
+- addnode=193.47.33.20:9779
+- addnode=193.47.33.19:9779
+- addnode=193.47.33.18:9779
+- addnode=193.47.33.17:9779
+- addnode=193.47.33.16:9779
+- addnode=193.47.33.15:9779
+- addnode=193.47.33.14:9779
+- addnode=193.47.33.13:9779
+- addnode=193.47.33.12:9779
+- addnode=193.47.33.11:9779
+- addnode=193.47.33.10:9779
+- addnode=193.47.33.9:9779
+- addnode=193.47.33.8:9779
+- addnode=193.47.33.7:9779
+- addnode=5.188.205.240:9779
+- addnode=5.188.205.239:9779
 
 License
 -------
